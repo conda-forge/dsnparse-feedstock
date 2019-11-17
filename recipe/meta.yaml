@@ -1,5 +1,5 @@
 {% set name = "dsnparse" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.15" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d754c04c02bb838d9015d881e18060070dc64e1d903b0a8954fe6faea62f6dff
+  sha256: 2ac5705b17cb28e8b115053c2d51cf3321dc2041b1d75e2db6157e05146d0fba
 
 build:
   noarch: python
