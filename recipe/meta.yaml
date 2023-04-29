@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -34,4 +34,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - Juanlu001
+    - astrojuanlu
