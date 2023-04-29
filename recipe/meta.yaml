@@ -1,25 +1,25 @@
 {% set name = "dsnparse" %}
-{% set version = "0.1.15" %}
+{% set version = "0.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ac5705b17cb28e8b115053c2d51cf3321dc2041b1d75e2db6157e05146d0fba
+  sha256: 86334148ccdbb52911c8828edb6a5f3064cd52b3a7fd4072c391fa3fa7a87031
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -34,4 +34,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - Juanlu001
+    - astrojuanlu
