@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: dsnparse
-  version: "0.2.1"
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dsnparse-${{ version }}.tar.gz
-  sha256: 90956235967569c875994adbad0928c347a1592b5fc8ecd9c1b1a20397dae697
+  sha256: 5e666ef311d6091b4fc4808337b6a8980ed3b2cee7a7975c19ea2c1d391531a0
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
