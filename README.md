@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@astrojuanlu](https://github.com/astrojuanlu/)
+* [@rxm7706](https://github.com/rxm7706/)
 
